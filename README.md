@@ -1,5 +1,5 @@
 # How to remove a dir ex:(.idea or node_modules) from existing github repo.
-### git rm -r --cached .idea
+`git rm -r --cached .idea`
 
 # Sync your local repo to a RE-NAMED repo on github
 ### git remote set-url origin https://github.com/rimatla/repo_name.git
