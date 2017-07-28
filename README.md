@@ -5,7 +5,7 @@
 `git remote set-url origin https://github.com/rimatla/repo_name.git`
 
 ### Write text with "code syntax" on README.md
-#See ex: `myCode.js`.
+#### See ex: `myCode.js`.
 
 ### Hyperlinks
 `[CakePHP](http://www.cakephp.org) - The rapid development PHP framework`
@@ -26,12 +26,12 @@
 
 
 ### Create and/or remove files
-`echo '.idea' >> .gitignore`
-`git rm -r --cached .idea`
-`git add .gitignore`
-`git commit -m 'your msg'`
+`echo '.idea' >> .gitignore`,
+`git rm -r --cached .idea`,
+`git add .gitignore`,
+`git commit -m 'your msg'`,
 `git push`
 
 ### Undo a git init
-`If you just inited it, you can just delete it:`
+#### If you just inited it, you can just delete it:
 `rm -rf .git`
