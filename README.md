@@ -35,3 +35,10 @@
 ### Undo a git init
 #### If you just inited it, you can just delete it:
 `rm -rf .git`
+
+### List Remote Branches
+`git branch ls-remote`
+`git fetch`
+
+### Checkout a branch 
+`git checkout branch_name`
