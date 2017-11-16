@@ -38,7 +38,13 @@
 
 ### List Remote Branches
 `git branch ls-remote`
+`git branch -a`
+
+### Fetch Newly Created Branches
 `git fetch`
 
-### Checkout a branch 
+### List Current Branch
+`git branch`
+
+### Checkout a branch
 `git checkout branch_name`
