@@ -46,5 +46,15 @@
 ### List Current Branch
 `git branch`
 
-### Checkout a branch
+### Checkout a Branch
 `git checkout branch_name`
+
+### See changes before commit
+`git diff`
+#### hit enter
+#### q ends it
+
+### Undo commit
+`git reset HEAD~`
+
+
