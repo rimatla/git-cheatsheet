@@ -57,4 +57,13 @@
 ### Undo commit
 `git reset HEAD~`
 
+### Find what remote url owns a given repo
+`git remote show origin`
 
+
+### Remote rejected (shallow update not allowed) ERROR
+#### This means that you have to unshallow your repository. To do so you will need to add your old remote again.
+`git remote add old <path-to-old-remote>`
+
+#### After that we use git fetch to fetch the remaining history from the old remote
+`git fetch --unshallow old`
