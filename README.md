@@ -31,7 +31,7 @@
 ### - Stage and commit 
 `git commit -a -m 'message'`
 
-#### - Fixes typos on last commit messages 
+### - Fixes typos on last commit messages 
 `$ git commit --amend -m 'new message'`
 
 ### - Undo commit
@@ -56,11 +56,13 @@
 `git rm -r --cached .idea`
 
 ### - Create and/or remove files
-`echo '.idea' >> .gitignore`,
-`git rm -r --cached .idea`,
-`git add .gitignore`,
-`git commit -m 'your msg'`,
-`git push`
+```` 
+echo '.idea' >> .gitignore,
+git rm -r --cached .idea,
+git add .gitignore,
+git commit -m 'your msg',
+git push 
+````
 
 ### - Undo a git init
 #### If you just inited it, you can just delete it:
@@ -98,8 +100,10 @@
 
 # • LOG
 #### - Log History
-`git log`
-`git log <filename>`
+````
+git log
+git log <filename>
+````
 
 # • DIFF
 ### - See changes before commit
