@@ -114,15 +114,6 @@ git log <filename>
 `git diff master ..branch-name`
 
 
-# • Obscure Errors
-##### - Remote rejected (shallow update not allowed) ERROR
-##### - This means that you have to unshallow your repository. To do so you will need to add your old remote again.
-`git remote add old <path-to-old-remote>`
-
-#### - After that we use git fetch to fetch the remaining history from the old remote
-`git fetch --unshallow old`
-
-
 # • VIM
 #### - To save: type  `:wq`, then press enter
 #### - To quit: type  `:q!`, then press enter
@@ -164,12 +155,33 @@ git merge branch-name
 ### - 3-way Merge
 `git merge branch-name`
 
-### - Merge Conflicts 
+# • Merge Conflicts 
 ### - Abort a merge during a merge conflict situation
 `git merge --abort` 
 
 ### - Checkout a commit directly, not through a branch, results in a detached HEAD state
 `git checkout (commit-hash)`
+
+## - Merging changes from a remote branch
+### - Make sure you have the latest data from upstream
+` git fetch upstream`
+
+### - Create and switch to a new branch based on master to explore the conflict
+`git checkout -b explore-conflict upstream/master`
+
+### - Now try merging the unmergeable-branch into it
+`git merge upstream/unmergeable-branch`
+
+### - Fix Conflits, then:
+`git add file-name`,
+`git commit -m "fixed conflict"`
+
+````
+ps: Create new branches when resolving conflicts
+- Branches are cheap and disposable.
+- Rather than risk messing up the branch you’ve been working on, create a new one specially for the purpose of discovering what sort of conflicts arise, and to give you a place to work on resolving them without disturbing your work so far.
+
+````
 
 # • STASH
 ### - Save changes for later use
@@ -184,7 +196,6 @@ git merge branch-name
 ### - Apply stashed changes (applies the most recent one)
 `git stash apply`
 
-
 ### - Apply a specific stashed change
 ````
 git stash list
@@ -196,3 +207,39 @@ git stash apply <label-name>
 
 ### - Add message w/ stash
 `git stash save "message"`
+
+# • PULL
+### - Pull all changes
+`git pull --all`
+
+### - Incorporate upstream changes
+````
+git checkout master
+git fetch
+git merge origin/master
+````
+#### PS: Note that here instead of `git fetch` followed by `git merge`, you could have run `git pull`. The pull operation does two things: it fetches updates from your GitHub fork (origin), AND merges them. However, be warned that occasionally git pull won’t always work in the way you expect, and doing things the explicit way helps make what you are doing `clearer`. git fetch followed by git merge is generally the `safer` option.
+
+# • Workflow
+`fork > clone > branch > edit > stage > commit > push > pull request > merge`
+
+## ps:
+### - When you ready to push, do it from your local branch
+ `push origin <local-branch>`
+
+ ### - Send pull request `from` your local branch
+ ### - Keeping master ‘clean’
+``
+You could of course have **merged** your new **branch** into your **master** branch, and sent me a **pull request from that**. But, once again, it’s a good policy to **keep** __your master branch__, on GitHub too, **clean** of changes you make, and only to pull things into it from **upstream**.
+
+In fact the same thing goes for other branches on my upstream that you want to work with. Keeping them clean isn’t strictly necessary, but it’s nice to know that you’ll always be able to pull changes from upstream without having to tidy up merge conflicts.
+``
+
+
+# • Obscure Errors
+##### - Remote rejected (shallow update not allowed) ERROR
+##### - This means that you have to unshallow your repository. To do so you will need to add your old remote again.
+`git remote add old <path-to-old-remote>`
+
+#### - After that we use git fetch to fetch the remaining history from the old remote
+`git fetch --unshallow old`
