@@ -5,7 +5,7 @@
 ### - Add a new dir project to an existing (previously created) repo
 `git remote add origin https://github.com/username/repo_name.git`
 
-### Find what remote url owns a given repo
+### - Find what remote url owns a given repo
 `git remote show origin`
 
 
@@ -165,3 +165,34 @@ git merge branch-name
 `git merge branch-name`
 
 ### - Merge Conflicts 
+### - Abort a merge during a merge conflict situation
+`git merge --abort` 
+
+### - Checkout a commit directly, not through a branch, results in a detached HEAD state
+`git checkout (commit-hash)`
+
+# • STASH
+### - Save changes for later use
+`git stash`
+
+### - See list of stashed changes
+`git stash list`
+
+### - See all edits done on previous stashes points
+`git stash list -p`
+
+### - Apply stashed changes (applies the most recent one)
+`git stash apply`
+
+
+### - Apply a specific stashed change
+````
+git stash list
+git stash apply <label-name>
+````
+
+### - Discard a stash
+`git stash pop`
+
+### - Add message w/ stash
+`git stash save "message"`
