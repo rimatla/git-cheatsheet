@@ -1,4 +1,4 @@
-### How to remove a dir ex:(.idea or node_modules) from existing github repo.
+### How to remove a dir ex: `.idea or node_modules` from existing github repo.
 `git rm -r --cached .idea`
 
 ### Sync your local repo to a RE-NAMED repo on github
@@ -14,7 +14,7 @@
 `git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>`
 
 ### Images
-![alt text](app.png?raw=true "app image")
+`![alt text](app.png?raw=true "app image")`
 
 ### Stage and commit 
 `git commit -a -m 'message'`
