@@ -176,11 +176,10 @@ git merge branch-name
 `git add file-name`,
 `git commit -m "fixed conflict"`
 
-``
 ps: Create new branches when resolving conflicts
 - Branches are cheap and disposable.
 - Rather than risk messing up the branch you’ve been working on, create a new one specially for the purpose of discovering what sort of conflicts arise, and to give you a place to work on resolving them without disturbing your work so far.
-``
+
 
 # • STASH
 ### - Save changes for later use
@@ -231,11 +230,11 @@ PS: Note that here instead of **git fetch** followed by **git merge**, you could
 
  ### - Send pull request `from` your local branch
  ### - Keeping master ‘clean’
-``
+
 You could of course have **merged** your new **branch** into your **master** branch, and sent me a **pull request from that**. But, once again, it’s a good policy to **keep** __your master branch__, on GitHub too, **clean** of changes you make, and only to pull things into it from **upstream**.
 
 In fact the same thing goes for other branches on my upstream that you want to work with. Keeping them clean isn’t strictly necessary, but it’s nice to know that you’ll always be able to pull changes from upstream without having to tidy up merge conflicts.
-``
+
 
 
 # • Obscure Errors
