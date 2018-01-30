@@ -1,41 +1,57 @@
-### How to remove a dir ex: `.idea or node_modules` from existing github repo.
-`git rm -r --cached .idea`
-
+# • Add Origin
 ### Sync your local repo to a RE-NAMED repo on github
 `git remote set-url origin https://github.com/rimatla/repo_name.git`
 
-### Write text with "code syntax" on README.md
-#### See ex: `myCode.js`.
+### Add a new dir project to an existing (previously created) repo
+`git remote add origin https://github.com/username/repo_name.git`
 
+
+
+# • README
 ### Hyperlinks
 `[CakePHP](http://www.cakephp.org) - The rapid development PHP framework`
-
-### Clone repo from a specific commit ie: first commit 
-`git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>`
 
 ### Images
 `![alt text](app.png?raw=true "app image")`
 
+### Write text with "code syntax" on README.md
+#### See ex: `myCode.js`.
+
+
+
+# • CLONE
+### Clone repo from a specific commit ie: first commit 
+`git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>`
+
+
+
+# • COMMITS
 ### Stage and commit 
 `git commit -a -m 'message'`
 
+### Rollback a github repository to a specific commit
+`git reset --hard 'your_commit_id'`
+`git push -f -u origin master `
+
+#### Fixes typos on last commit messages 
+`$ git commit --amend -m 'new message'`
+
+### Undo commit
+`git reset HEAD~`
+
+### To see commit graph
+`git log --all --decorate --oneline  --graph`
+
+
+# • DELETE
 ### Delete file from repo
 `git rm file_name`
 
 ### Permanently Delete a repo, caution with `rf`
 `rm -rf .git`
 
-### Force a push to master branch
-`git push -f -u origin master`
-
-### Add a new dir project to an existing (previously created) repo
-`git remote add origin https://github.com/username/repo_name.git`
-
-
-### Rollback a github repository to a specific commit
-`git reset --hard 'your_commit_id'`
-`git push -f -u origin master `
-
+### How to remove a dir ex: `.idea or node_modules` from existing github repo.
+`git rm -r --cached .idea`
 
 ### Create and/or remove files
 `echo '.idea' >> .gitignore`,
@@ -48,6 +64,24 @@
 #### If you just inited it, you can just delete it:
 `rm -rf .git`
 
+
+
+# • PUSH
+### Force a push to master branch
+`git push -f -u origin master`
+
+# • BRANCHES
+### Create and checkout branch 
+`git checkout -b branch-name`
+
+### Delete a branch
+`git branch -d <branch-name>`
+
+### Create a branch 
+ `git branch <branch-name>`
+### Checkout a Branch
+`git checkout <branch_name>`
+
 ### List Remote Branches
 `git branch ls-remote`
 `git branch -a`
@@ -58,16 +92,12 @@
 ### List Current Branch
 `git branch`
 
-### Checkout a Branch
-`git checkout branch_name`
-
 ### See changes before commit
 `git diff`
 #### hit enter
 #### q ends it
 
-### Undo commit
-`git reset HEAD~`
+
 
 ### Find what remote url owns a given repo
 `git remote show origin`
@@ -80,11 +110,11 @@
 #### After that we use git fetch to fetch the remaining history from the old remote
 `git fetch --unshallow old`
 
+### Create a new branch 
+
 #### Log History
 `$ git log`
 
-#### Fixes typos on last commit messages 
-`$ git commit --amend -m 'new message'`
 
 ## VIM
 #### To save: type  `:wq`, then press enter
@@ -96,14 +126,13 @@
 ### Unstage a added file
 `git reset HEAD file_name`
 
-### To see commit graph
-`git log --all --decorate --oneline  --graph`
+### create new dir and file at the same time
+`mkdir name && touch name/file.js`
 
+# • Linux Commands
 ### print file on cli
 `cat file_name`
 
-### create new dir and file at the same time
-`mkdir name && touch name/file.js`
 
 ### remove a file
 `rm file_name`
@@ -113,3 +142,21 @@
 
 ### to move files
 `mv file_name path`
+
+
+# • Merge
+### See differance between master and local branch before merging 
+`git diff master ..branch-name`
+
+### Fast Forward Merge
+`git checkout master`
+### -
+`git merge branch-name`
+
+### Certify what branches were merged 
+`git branch --merged`
+
+### 3-way Merge
+`git merge branch-name`
+
+### Merge Conflicts 
