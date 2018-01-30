@@ -99,7 +99,7 @@ git push
 
 
 # • LOG
-#### - Log History
+### - Log History
 ````
 git log
 git log <filename>
@@ -116,8 +116,8 @@ git log <filename>
 
 
 # • Obscure Errors
-### - Remote rejected (shallow update not allowed) ERROR
-#### - This means that you have to unshallow your repository. To do so you will need to add your old remote again.
+##### - Remote rejected (shallow update not allowed) ERROR
+##### - This means that you have to unshallow your repository. To do so you will need to add your old remote again.
 `git remote add old <path-to-old-remote>`
 
 #### - After that we use git fetch to fetch the remaining history from the old remote
@@ -154,9 +154,10 @@ git log <filename>
 `git reset HEAD file_name`
 
 ### - Fast Forward Merge
-`git checkout master`
-### -
-`git merge branch-name`
+````
+git checkout master
+git merge branch-name
+````
 
 ### - Certify what branches were merged 
 `git branch --merged`
