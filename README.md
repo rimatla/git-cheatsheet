@@ -10,7 +10,19 @@
 ### Hyperlinks
 `[CakePHP](http://www.cakephp.org) - The rapid development PHP framework`
 
-### Permanently Delete a repo
+### Clone repo from a specific commit ie: first commit 
+`git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>`
+
+### Images
+![alt text](app.png?raw=true "app image")
+
+### Stage and commit 
+`git commit -a -m 'message'`
+
+### Delete file from repo
+`git rm file_name`
+
+### Permanently Delete a repo, caution with `rf`
 `rm -rf .git`
 
 ### Force a push to master branch
@@ -67,3 +79,37 @@
 
 #### After that we use git fetch to fetch the remaining history from the old remote
 `git fetch --unshallow old`
+
+#### Log History
+`$ git log`
+
+#### Fixes typos on last commit messages 
+`$ git commit --amend -m 'new message'`
+
+## VIM
+#### To save: type  `:wq`, then press enter
+#### To quit: type  `:q!`, then press enter
+
+### Discard Changes to file
+`git checkout -- file_name`
+
+### Unstage a added file
+`git reset HEAD file_name`
+
+### To see commit graph
+`git log --all --decorate --oneline  --graph`
+
+### print file on cli
+`cat file_name`
+
+### create new dir and file at the same time
+`mkdir name && touch name/file.js`
+
+### remove a file
+`rm file_name`
+
+### remove a dir
+`rm -r dir_name`
+
+### to move files
+`mv file_name path`
