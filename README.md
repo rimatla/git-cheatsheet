@@ -218,9 +218,9 @@ git fetch
 git merge origin/master
 ````
 
-``
+# •
 PS: Note that here instead of **git fetch** followed by **git merge**, you could have run **git pull**. The pull operation does two things: it fetches updates from your GitHub fork (origin), AND merges them. However, be warned that occasionally git pull won’t always work in the way you expect, and doing things the explicit way helps make what you are doing **clearer**. git fetch followed by git merge is generally the **safer** option.
-``
+
 
 # • Workflow
 `fork > clone > branch > edit > stage > commit > push > pull request > merge`
