@@ -176,12 +176,12 @@ git merge branch-name
 `git add file-name`,
 `git commit -m "fixed conflict"`
 
-````
+``
 ps: Create new branches when resolving conflicts
 - Branches are cheap and disposable.
 - Rather than risk messing up the branch you’ve been working on, create a new one specially for the purpose of discovering what sort of conflicts arise, and to give you a place to work on resolving them without disturbing your work so far.
 
-````
+``
 
 # • STASH
 ### - Save changes for later use
