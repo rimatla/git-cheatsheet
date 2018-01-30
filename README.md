@@ -37,9 +37,6 @@
 ### - Undo commit
 `git reset HEAD~`
 
-### - To see commit graph
-`git log --all --decorate --oneline  --graph`
-
 ### - Rollback a github repository to a specific commit
 `git reset --hard 'your_commit_id'`
 `git push -f -u origin master `
@@ -67,7 +64,6 @@ git push
 ### - Undo a git init
 #### If you just inited it, you can just delete it:
 `rm -rf .git`
-
 
 
 # • PUSH
@@ -99,6 +95,9 @@ git push
 
 
 # • LOG
+### - To see log and commits on a branch graph
+`git log --all --decorate --oneline  --graph`
+
 ### - Log History
 ````
 git log
