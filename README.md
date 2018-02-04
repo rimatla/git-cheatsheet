@@ -98,6 +98,9 @@ git push
 ### - To see log and commits on a branch graph
 `git log --all --decorate --oneline  --graph`
 
+### - One Line Log
+`git log --oneline`
+
 ### - Log History
 ````
 git log
