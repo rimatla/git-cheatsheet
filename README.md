@@ -139,9 +139,12 @@ git log <filename>
 `mv file_name path`
 
 
-# • Merge
+# • Merge and/or Discard
 ### - Discard Changes to file
 `git checkout -- file_name`
+
+### - Discard Changes to all files
+`git checkout -- .`
 
 ### - Unstage a added file
 `git reset HEAD file_name`
