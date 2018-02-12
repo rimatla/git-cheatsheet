@@ -301,6 +301,7 @@ Notice the --no-ff flag in the merge command. This flag keeps the repo branching
 
 ### Finally...
 #### If the feature branch was pushed to the repo, as it should have been per the workflow we described, you will want to delete this from the remote repo as well...
+`git push origin --delete my-feature-branch`
 
 #### PS: My branch was rejected?
 This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
