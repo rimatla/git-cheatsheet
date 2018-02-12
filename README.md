@@ -250,3 +250,13 @@ In fact the same thing goes for other branches on my upstream that you want to w
 
 #### - After that we use git fetch to fetch the remaining history from the old remote
 `git fetch --unshallow old`
+
+# • Alias Examples
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
