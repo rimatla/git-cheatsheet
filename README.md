@@ -252,6 +252,7 @@ In fact the same thing goes for other branches on my upstream that you want to w
 `git fetch --unshallow old`
 
 # • Alias Examples
+``
 alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
@@ -260,3 +261,31 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+``
+
+# • Work flow
+`git branch`
+`git checkout master`
+#### Once on master and ready to pull updates, use the following:
+`git fetch`
+`git merge origin/master`
+#### Now that I am all up to date with the remote repo, I'll create a branch
+`git checkout -b branch-name`
+`git branch`
+#### Edit and commit 
+`git commit -am 'my message in present tense'`
+#### Push local branch
+`git push origin branch-name`
+#### Tracking remote branches
+`git branch -r`
+#### To keep my local repo 100% in sync with deleted remote branches, I make use of this command:
+The -p or --prune flag, after fetching, will remove any remote-tracking branches which no longer exist.
+`git fetch -p`
+
+#### Pull request - Once the reviewer has approved the editors updates...
+
+
+
+#### PS: My branch was rejected?
+This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
+`git pull origin my-new-feature-branch`
