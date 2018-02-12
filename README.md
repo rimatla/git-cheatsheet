@@ -283,9 +283,22 @@ The -p or --prune flag, after fetching, will remove any remote-tracking branches
 `git fetch -p`
 
 #### Pull request - Once the reviewer has approved the editors updates...
+`git checkout my-feature-branch`
+`git pull origin branch-name`
 
+#### Make sure that the feature branch is up to date with master, while in the feature branch, execrate the following:
+`git pull origin master`
 
+#### Now that I know that the feature branch is up to date with the remote repo and that it has the latest code from master, I can now merge these branches
+`git checkout master`
+`git pull origin master`
+`git merge --no-ff my-feature-branch`
+
+Notice the --no-ff flag in the merge command. This flag keeps the repo branching history from flattening out. If I were to look at the history of this branch, using GitX for example, when using the --no-ff flag, I will see the appropriate bump illustrating the history of the feature branch. This is helpful information. If I didn't use this flag, then Git will move the commit pointer forward.
+
+#### Now that I have merged the code, the feature branch by definition is obsolete. First, delete the branch from the local repo.
+`git branch -d branch-name`
 
 #### PS: My branch was rejected?
 This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
-`git pull origin my-new-feature-branch`
+`git pull origin branch-name`
