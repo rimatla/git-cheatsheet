@@ -118,6 +118,8 @@ git log <filename>
 
 
 # • VIM
+#### - To type/insert: type  `i`
+#### - When finished editing the file, click the `esc` key
 #### - To save: type  `:wq`, then press enter
 #### - To quit: type  `:q!`, then press enter
 
