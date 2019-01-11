@@ -307,5 +307,6 @@ Notice the --no-ff flag in the merge command. This flag keeps the repo branching
 
 #### PS: My branch was rejected?
 > AKA: Updates were rejected because the tip of your current branch is behind
+
 This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
 `git pull origin branch-name`
