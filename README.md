@@ -310,3 +310,17 @@ Notice the --no-ff flag in the merge command. This flag keeps the repo branching
 
 This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
 `git pull origin branch-name`
+
+# • How to add SSH keys to your github/gilab
+- Create the key
+`$ ssh-keygen -t rsa -C "$your_email@foobar.com"`
+
+> To accept the default path just hit Enter on your keyboard
+
+
+- View the Public Key
+`$ cat ~/.ssh/id_rsa.pub`
+
+> Your key will appear – copy the key text starting from ssh-rsa all the way to your username/host.
+
+- Add the Key to Your GitLab/GitHhub Profile
