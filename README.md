@@ -20,11 +20,9 @@
 #### See ex: `myCode.js`.
 
 
-
 # • CLONE
 ### - Clone repo from a specific commit ie: first commit 
 `git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>`
-
 
 
 # • COMMITS
