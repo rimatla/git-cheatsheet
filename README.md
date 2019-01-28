@@ -317,7 +317,6 @@ This is a special case when working on a team and the branch I am are pushing is
 
 > To accept the default path just hit Enter on your keyboard
 
-
 - View the Public Key
 `$ cat ~/.ssh/id_rsa.pub`
 
