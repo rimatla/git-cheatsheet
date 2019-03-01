@@ -309,6 +309,14 @@ Notice the --no-ff flag in the merge command. This flag keeps the repo branching
 This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
 `git pull origin branch-name`
 
+# • Greyed out icon on remote GitHub directories 
+```
+git rm --cached <folder_name>
+git add .
+git commit -m "<your_message>"
+git push --all
+```
+
 # • How to add SSH keys to your github/gilab
 - Create the key
 `$ ssh-keygen -t rsa -C "$your_email@foobar.com"`
