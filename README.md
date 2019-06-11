@@ -338,4 +338,4 @@ git push --all
 - Check for the remote version `$ git remote -v`
 - Add the Main Repo (the one you forked from) as remote upstream `$ git remote add upstream 'main_repo_url'` 
 - Pull latest upstream changes `$ git pull upstream master`
-- - Pull latest upstream changes w/ rebase `$ git pull --rebase upstream master`
+- Pull latest upstream changes w/ rebase `$ git pull --rebase upstream master`
