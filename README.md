@@ -329,3 +329,13 @@ git push --all
 > Your key will appear – copy the key text starting from ssh-rsa all the way to your username/host.
 
 - Add the Key to Your GitLab/GitHhub Profile
+
+- To avoid entering a passphrase everytime
+`$ ssh-add`
+
+# • How to Fork and PR to main Stream from your Fork
+- Fork the desired repo
+- Check for the remote version `$ git remote -v`
+- Add the Main Repo (the one you forked from) as remote upstream `$ git remote add upstream 'main_repo_url'` 
+- Pull latest upstream changes `$ git pull upstream master`
+- - Pull latest upstream changes w/ rebase `$ git pull --rebase upstream master`
