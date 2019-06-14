@@ -346,5 +346,5 @@ git push --all
 
 # • Git Config
 - Set a Git username: `$ git config --global user.name "Mona Lisa"`
-- Confirm that you have set the Git username correctly: ``$ git config --global user.name` > Mona Lisa
-- Repeat process for `$ $ git config --global user.email you@example.com`
+- Confirm that you have set the Git username correctly: `$ git config --global user.name` > Mona Lisa
+- Repeat process for `$ git config --global user.email you@example.com`
