@@ -341,5 +341,5 @@ git push --all
 - Pull latest upstream changes w/ rebase `$ git pull --rebase upstream master`
 
 # • GitLens- How to Compare Changes Between Branches
-- On VSC >GitLens:Compare Working Tree Wuth...
+- On VSC >GitLens:Compare Working Tree With...
 - Choose desired option
