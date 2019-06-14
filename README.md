@@ -339,3 +339,7 @@ git push --all
 - Add the Main Repo (the one you forked from) as remote upstream `$ git remote add upstream 'main_repo_url'` 
 - Pull latest upstream changes `$ git pull upstream master`
 - Pull latest upstream changes w/ rebase `$ git pull --rebase upstream master`
+
+# • GitLens- How to Compare Changes Between Branches
+- On VSC >GitLens:Compare Working Tree Wuth...
+- Choose desired option
