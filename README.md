@@ -39,6 +39,11 @@
 `git reset --hard 'your_commit_id'`
 `git push -f -u origin master `
 
+### See all unpushed commits or commits that are not in another branch
+`git cherry -v`
+
+### You may also compare against another (upstream) branch like that:
+`git cherry -v origin/somebranch`
 
 # • DELETE
 ### - Delete file from repo
