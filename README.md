@@ -39,18 +39,18 @@
 `git reset --hard 'your_commit_id'`
 `git push -f -u origin master `
 
-### See all unpushed commits or commits that are not in another branch
+### - See all unpushed commits or commits that are not in another branch
 `git cherry -v`
 
-### Compare against another (upstream) branch like:
+### - Compare against another (upstream) branch like:
 `git cherry -v origin/somebranch`
 
-## SQUASH Commits
+## - SQUASH Commits
 - `git rebase -i HEAD~N`
 - On VIM: `CW, esc, .` (this will change the desired word and period will repeat the previous actions)
 - You may need to use `-f` when pushing if your rebased branch was previously pushed before
 
-### Amend Most Recent Commit Message
+### - Amend Most Recent Commit Message
 `git commit --amend` 
 
 # • DELETE
