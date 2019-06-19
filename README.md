@@ -42,8 +42,16 @@
 ### See all unpushed commits or commits that are not in another branch
 `git cherry -v`
 
-### You may also compare against another (upstream) branch like that:
+### Compare against another (upstream) branch like:
 `git cherry -v origin/somebranch`
+
+## SQUASH Commits
+- `git rebase -i HEAD~N`
+- On VIM: `CW, esc, .` (this will change the desired word and period will repeat the previous actions)
+- You may need to use `-f` when pushing if your rebased branch was previously pushed before
+
+### Amend Most Recent Commit Message
+`git commit --amend` 
 
 # • DELETE
 ### - Delete file from repo
@@ -125,6 +133,7 @@ git log <filename>
 #### - When finished editing the file, click the `esc` key
 #### - To save: type  `:wq`, then press enter
 #### - To quit: type  `:q!`, then press enter
+#### - To change word: type `cw`
 
 
 # • Linux Commands
