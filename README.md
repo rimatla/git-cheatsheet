@@ -48,7 +48,7 @@
 ## - SQUASH Commits
 - `git rebase -i HEAD~N`
 - On VIM: `CW, esc, .` (this will change the desired word and period will repeat the previous actions)
-- Pass the desired flag *before each commit message*
+- Pass the desired flag _before each commit message_
 - You may need to use `-f` when pushing if your rebased branch was previously pushed before
 
 ### - Amend Most Recent Commit Message
