@@ -48,6 +48,7 @@
 ## - SQUASH Commits
 - `git rebase -i HEAD~N`
 - On VIM: `CW, esc, .` (this will change the desired word and period will repeat the previous actions)
+- Pass the desired flag *before each commit message*
 - You may need to use `-f` when pushing if your rebased branch was previously pushed before
 
 ### - Amend Most Recent Commit Message
@@ -134,6 +135,8 @@ git log <filename>
 #### - To save: type  `:wq`, then press enter
 #### - To quit: type  `:q!`, then press enter
 #### - To change word: type `cw`
+#### - To delete type `dd`
+#### - To undo type `u`
 
 
 # • Linux Commands
