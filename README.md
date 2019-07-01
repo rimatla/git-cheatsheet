@@ -89,6 +89,9 @@ git push
 ### - Delete a branch
 `git branch -d <branch-name>`
 
+### - Rename a branch
+`git branch -m <new_name>`
+
 ### - Create a branch 
  `git branch <branch-name>`
 
@@ -154,6 +157,9 @@ git log <filename>
 
 ### - to move files
 `mv file_name path`
+
+### - Toggle between directories
+`cd -`
 
 
 # • Merge and/or Discard
