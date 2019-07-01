@@ -89,6 +89,9 @@ git push
 ### - Delete a branch
 `git branch -d <branch-name>`
 
+### - Delete remote branch
+`git push origin --delete branch-name`
+
 ### - Rename a branch
 `git branch -m <new_name>`
 
