@@ -164,6 +164,25 @@ git log <filename>
 ### - Toggle between directories
 `cd -`
 
+### - Clean terminal window
+- `ctr l`
+- `cmd k`
+- `ctr u`
+
+### - Bring Cursor Back to begining of line
+`ctr a`
+
+### - Bring Cursor back by one word
+`ctr e`
+
+### - Delete the word immediately before, or to the left of, the cursor.
+`ctl w`
+
+### - Move cursor to the next word on the line
+`esc f`
+
+### - Move cursor to the next word on the line
+`esc b`
 
 # • Merge and/or Discard
 ### - Discard Changes to file
@@ -278,7 +297,7 @@ In fact the same thing goes for other branches on my upstream that you want to w
 `git fetch --unshallow old`
 
 # • Alias Examples
-``
+```
 alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
@@ -287,7 +306,7 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
-``
+```
 
 # • Work flow
 `git branch`
