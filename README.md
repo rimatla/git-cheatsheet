@@ -374,3 +374,11 @@ git push --all
 - Set a Git username: `$ git config --global user.name "Mona Lisa"`
 - Confirm that you have set the Git username correctly: `$ git config --global user.name` > Mona Lisa
 - Repeat process for `$ git config --global user.email you@example.com`
+
+# • Commit History Trouble Shooting 
+- `git reset --soft HEAD~1 `
+- stash your changes
+- `git reset --hard HEAD~10 `
+- Merge Origin Master
+- stash apply
+- stage, commit and force push your branch
