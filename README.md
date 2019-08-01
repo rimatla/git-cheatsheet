@@ -233,39 +233,57 @@ ps: Create new branches when resolving conflicts
 
 
 # • STASH
-### - Save changes for later use
+#### - Save changes for later use:
 `git stash`
 
-### - See list of stashed changes
+#### - See list of stashed changes:
 `git stash list`
 
-### - See all edits done on previous stashes points
+#### - See all edits done on previous stashes points:
 `git stash list -p`
 
-### - Apply stashed changes (applies the most recent one)
+#### - To show files changed in the last stash:
+`git stash show`
+
+#### - To view the content of the most recent stash:
+`git stash show -p`
+
+#### - To view the content of an arbitrary stash:
+`git stash show -p stash@{1}`
+
+#### - Apply stashed changes (applies the most recent one)
 `git stash apply`
 
-### - Apply a specific stashed change
+#### - Apply a specific stashed change
 ````
 git stash list
 git stash apply <label-name>
 ````
 
-### - Discard a stash
+#### - Discard a stash
 `git stash pop`
 
-### - Add message w/ stash
+#### - Add message w/ stash
 `git stash save "message"`
 
 # • PULL
 ### - Pull all changes
 `git pull --all`
 
-### - Incorporate upstream changes
+# Origin
+### - Incorporate origin master changes
 ````
 git checkout master
 git fetch
 git merge origin/master
+````
+
+# Upstream
+### - Incorporate upstream master changes
+````
+git checkout master
+git fetch upstream
+git merge upstream/master
 ````
 
 # •
