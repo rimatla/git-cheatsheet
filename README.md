@@ -259,12 +259,14 @@ ps: Create new branches when resolving conflicts
 git stash list
 git stash apply <label-name>
 ````
-
 #### - Discard a stash
 `git stash pop`
 
 #### - Add message w/ stash
 `git stash save "message"`
+
+#### - To clear all of stashes at once:
+`git stash clear`
 
 # • PULL
 ### - Pull all changes
