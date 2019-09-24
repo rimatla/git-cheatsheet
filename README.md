@@ -380,8 +380,8 @@ git add .
 git commit -m "<your_message>"
 git push --all
 ```
-
-# • How to add SSH keys to your github/gilab
+# • SSH
+### • How to add SSH keys to your github/gilab
 - Create the key
 `$ ssh-keygen -t rsa -C "$your_email@foobar.com"`
 
@@ -397,7 +397,8 @@ git push --all
 - To avoid entering a passphrase everytime
 `$ ssh-add`
 
-# • How to Fork and PR to main Stream from your Fork
+# • Fork
+### • How to Fork and PR to main Stream from your Fork
 - Fork the desired repo
 - Check for the remote version `$ git remote -v`
 - Add the Main Repo (the one you forked from) as remote upstream `$ git remote add upstream 'main_repo_url'` 
