@@ -399,11 +399,17 @@ git push --all
 
 # • Fork
 ### • How to Fork and PR to main Stream from your Fork
-- Fork the desired repo
+- Fork a repo
+- Clone your _forked_ repo
 - Check for the remote version `$ git remote -v`
-- Add the Main Repo (the one you forked from) as remote upstream `$ git remote add upstream 'main_repo_url'` 
+- Add the Main Repo - not yout fork but rather the one you forked - as remote upstream `$ git remote add upstream 'main_repo_url'` 
 - Pull latest upstream changes `$ git pull upstream master`
 - Pull latest upstream changes w/ rebase `$ git pull --rebase upstream master`
+
+# • PR from Fork
+- Make changes inside your fork, stage, commit
+- Push change: `git push origin my-feature-branch`
+- Create a PR from your fork into the main repo
 
 # • GitLens- How to Compare Changes Between Branches
 - On VSC >GitLens:Compare Working Tree With...
