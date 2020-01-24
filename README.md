@@ -74,9 +74,11 @@ git push
 ````
 
 # • Discard
-### Dicard ALL changes `git checkout .`
-### Discard Staged and Working Directories changes `git reset --hard`
-### Discard everything including newly created files 
+### - Dicard ALL changes 
+`git checkout .`
+### - Discard Staged and Working Directories changes 
+`git reset --hard`
+### - Discard everything including newly created files 
  - To see what's been removed `git clean -nfd`
  - To delete `git clean -fd`
 
