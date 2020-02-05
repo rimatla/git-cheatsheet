@@ -193,6 +193,9 @@ git log <filename>
 ### - Move cursor to the next word on the line
 `esc b`
 
+### - Remove all node modules (monorepo)
+`rm -rf packages/*/node_modules`
+
 # • Merge and/or Discard
 ### - Discard Changes to file
 `git checkout -- file_name`
