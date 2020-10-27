@@ -64,6 +64,9 @@
 ### - How to remove a dir ex: `.idea or node_modules` from existing github repo.
 `git rm -r --cached .idea`
 
+### - How to remove already commited .DS_STORE
+ `find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch`
+
 ### - Create and/or remove files
 ```` 
 echo '.idea' >> .gitignore,
