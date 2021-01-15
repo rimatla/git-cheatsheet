@@ -147,7 +147,7 @@ git log <filename>
 `git diff master ..branch-name`
 
 # • Case Sensitive File Renamed  
-### - tell remote origiin to compute a renamed file locally
+### - Tell remote origin to compute a renamed file locally
 `git mv -f OldFileNameCase newfilenamecase`
 
 # • VIM
