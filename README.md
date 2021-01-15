@@ -146,6 +146,9 @@ git log <filename>
 ### - See differance between master and local branch before merging 
 `git diff master ..branch-name`
 
+# • Case Sensitive File Renamed  
+### - tell remote origiin to compute a renamed file locally
+`git mv -f OldFileNameCase newfilenamecase`
 
 # • VIM
 #### - To type/insert: type  `i`
