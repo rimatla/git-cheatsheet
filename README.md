@@ -445,3 +445,13 @@ git push --all
 - Merge Origin Master
 - stash apply
 - stage, commit and force push your branch
+
+# • node_modules
+#### Delete all node_modules recursively 
+- Print out a list of directories to be deleted:
+
+`find . -name 'node_modules' -type d -prune`
+
+- Delete directories from the current working directory:
+
+`find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +`
