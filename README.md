@@ -455,3 +455,6 @@ git push --all
 - Delete directories from the current working directory:
 
 `find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +`
+
+# • rsync Data Transfer (External HD)
+- sudo rsync -vaE --progress /Volumes/SourceName /Volumes/DestinationName
