@@ -456,5 +456,10 @@ git push --all
 
 `find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +`
 
+- To Delete folders one by one and printing the folder being deleted
+
+`find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;`
+
+
 # • rsync Data Transfer (External HD)
 - sudo rsync -vaE --progress /Volumes/SourceName /Volumes/DestinationName
