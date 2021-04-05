@@ -463,3 +463,7 @@ git push --all
 
 # • rsync Data Transfer (External HD)
 - sudo rsync -vaE --progress /Volumes/SourceName /Volumes/DestinationName
+
+# • JEST
+#### Clear Cache 
+`yarn jest --clearCache` 
