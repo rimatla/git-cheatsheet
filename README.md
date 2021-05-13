@@ -464,6 +464,9 @@ git push --all
 # • rsync Data Transfer (External HD)
 - sudo rsync -vaE --progress /Volumes/SourceName /Volumes/DestinationName
 
+# • Rename File on Git Remote
+`git mv -f OldFileNameCase newfilenamecase`
+
 # • JEST
 #### Clear Cache 
 `yarn jest --clearCache` 
