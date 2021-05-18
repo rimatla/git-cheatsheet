@@ -627,7 +627,7 @@ git push --all
 
 # Multiple username on github with multiple SSH keys
 
-- create default key
+- Create default key
 
 `ssh-keygen`
 
@@ -673,5 +673,6 @@ IdentityFile ~/.ssh/abt_id_rsa
 
 - Try pushing code back upstream
 
-#### Edit credentials on .gitconfig 
-- `git config --global credential.useHttpPath true` 
+#### Edit credentials on .gitconfig
+
+- `git config --global credential.useHttpPath true`
