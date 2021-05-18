@@ -676,3 +676,9 @@ IdentityFile ~/.ssh/abt_id_rsa
 #### Edit credentials on .gitconfig
 
 - `git config --global credential.useHttpPath true`
+
+- config your repo locally 
+`git config user.name newusername`
+`git config user.email useremail` 
+
+- push code 
