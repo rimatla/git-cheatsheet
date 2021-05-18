@@ -470,3 +470,7 @@ git push --all
 # • JEST
 #### Clear Cache 
 `yarn jest --clearCache` 
+
+
+# • New Private Remote Repo under new github username
+`git remote add origin https://USERNAME:PASSWORD@github.com/USERNAME/REPONAME.git`
