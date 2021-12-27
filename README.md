@@ -66,6 +66,11 @@
 - Pass the desired flag **before each commit message**
 - You may need to use `-f` when pushing if your rebased branch was previously pushed before
 
+## - if there are only two commits you want to merge, and they are the "most recent two"
+
+`git reset --soft "HEAD^"`
+`git commit --amend`
+
 ### - Amend Most Recent Commit Message
 
 `git commit --amend`
