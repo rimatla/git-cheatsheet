@@ -43,8 +43,9 @@
 `$ git commit --amend -m 'new message'`
 
 ### - Undo commit (with files already commited to remote)
-```git reset --soft HEAD^ ```
-```git reset HEAD~```
+`git reset --soft HEAD^`
+or
+`git reset HEAD~`
 
 ### - Rollback a github repository to a specific commit
 
