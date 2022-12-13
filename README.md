@@ -540,14 +540,21 @@ git push --all
 # • SSH
 
 ### • How to add SSH keys to your github/gilab
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 - Create the key
-  `$ ssh-keygen -t rsa -C "$your_email@foobar.com"`
+  `ssh-keygen -t ed25519 -C  "$your_email@foobar.com"`
 
 > To accept the default path just hit Enter on your keyboard
 
 - View the Public Key
-  `$ cat ~/.ssh/id_rsa.pub`
+  `cat ~/.ssh/id_ed25519.pub`
+
+- Copy Public Key
+`pbcopy < ~/.ssh/id_ed25519.pub`
+
+- To see if it worked:
+`ssh -T git@github.com`
 
 > Your key will appear – copy the key text starting from ssh-rsa all the way to your username/host.
 
