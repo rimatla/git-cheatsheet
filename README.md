@@ -655,6 +655,12 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 
 - Try pushing code back upstream
 
+-Edit: Alternatively create a [EdDSA key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- Custom Name 👇
+```
+ssh-keygen -t ed25519 -f ~/.ssh/ed25519_customname -C "myemail@gmail.com
+```
+
 #### Set up a config file
 
 ```
