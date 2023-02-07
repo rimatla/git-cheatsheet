@@ -700,9 +700,11 @@ IdentityFile ~/.ssh/abt_id_rsa
 - `git config --global credential.useHttpPath true`
 
 > **Note**
-> We might need to add your ssh keys and agent to your (either) .zshrc or .bashrc 
-> eval "$(ssh-agent -s)"
-> ssh-add --apple-use-keychain ~/.ssh/ed25519_example
+> We might need to add your ssh keys and agent to your (either) .zshrc or .bashrc i.e.
+```
+eval "$(ssh-agent -s)"
+ssh-add --apple-use-keychain ~/.ssh/ed25519_example
+```
 
 - config your repo locally 
 `git config user.name newusername`
