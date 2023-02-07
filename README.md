@@ -542,6 +542,9 @@ git push --all
 ### • How to add SSH keys to your github/gilab
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
+- List existing ssh keys, if any
+`ls -al ~/.ssh`
+
 - Create the key
   `ssh-keygen -t ed25519 -C  "$your_email@foobar.com"`
 
@@ -696,8 +699,14 @@ IdentityFile ~/.ssh/abt_id_rsa
 
 - `git config --global credential.useHttpPath true`
 
+> **Note**
+> We might need to add your ssh keys and agent to your (either) .zshrc or .bashrc 
+> eval "$(ssh-agent -s)"
+> ssh-add --apple-use-keychain ~/.ssh/ed25519_example
+
 - config your repo locally 
 `git config user.name newusername`
 `git config user.email useremail` 
+
 
 - push code 
