@@ -711,4 +711,7 @@ ssh-add --apple-use-keychain ~/.ssh/ed25519_example
 `git config user.email useremail` 
 
 
-- push code 
+- push code
+
+### React Query Debugger 
+- `&debugQuery=` 
